@@ -1,0 +1,9 @@
+{%- comment -%}
+  Judge.me + Shopify: connect review ratings to your theme's Product schema.
+  Where: your theme's Product JSON-LD (search the theme files for "@type": "Product").
+  Add the line below directly under "@type": "Product".
+  First published by Path Digital Services (2020); updated to Judge.me's current recommendation:
+  https://judge.me/help/en/articles/8409296-displaying-product-ratings-in-google-search-results
+  Test with Google's Rich Results Test after saving.
+{%- endcomment -%}
+"@id": {{ canonical_url | append: '#product' | json }},
