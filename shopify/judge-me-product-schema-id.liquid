@@ -1,5 +1,7 @@
 {%- comment -%}
   Judge.me + Shopify: connect review ratings to your theme's Product schema.
+  NOTE: needed if your theme codes its Product JSON-LD with no "@id".
+  Themes that use the structured_data filter (e.g. Shopify's Dawn and Horizon) already output one: skip this.
   Where: your theme's Product JSON-LD (search the theme files for "@type": "Product").
   Add the line below directly under "@type": "Product".
   First published by Path Digital Services (2020); updated to Judge.me's current recommendation:
